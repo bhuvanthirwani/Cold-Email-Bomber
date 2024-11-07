@@ -3,7 +3,7 @@
 <body>
     <p>Hi <span style="color: #0073e6;">{first_name}</span>,</p>
 
-    <p>I hope this email finds you well. I wanted to follow up on my previous email regarding a <strong style="color: #333399;">{designation}</strong> position request to <span style="color: #0073e6;">{first_name}</span> at <strong style="color: #0073e6;">{company_name}</strong>. I understand that you are likely very busy, but I wanted to reiterate my interest in connecting with you to discuss the opportunity for the <strong style="color: #333399;">{designation}</strong> position.</p>
+    <p>I hope this email finds you well. I wanted to follow up on my previous email regarding a <strong style="color: #333399;">{designation}</strong> opportunity to <span style="color: #0073e6;">{first_name}</span> at <strong style="color: #0073e6;">{company_name}</strong>. I understand that you are likely very busy, but I wanted to reiterate my interest in connecting with you to discuss the opportunity for the <strong style="color: #333399;">{designation}</strong> position.</p>
 
     <p>If there's any additional information you need from me or if there's anything else I can do to facilitate this connection, please don't hesitate to let me know. I truly appreciate your help with this.</p>
 
