@@ -57,7 +57,7 @@ def send_email(sender_email, sender_password, recipient_email, subject, message,
 
         # Log successfully sent email address to a text file
         print("HAHHA", os.getcwd())
-        success_log_file = f"success_history/{scenario}/{company_name}_successfully_sent_emails.txt"
+        success_log_file = f"history/{scenario}/{company_name}_successfully_sent_emails.txt"
         # Define US Eastern Standard Time timezone
         est = pytz.timezone('America/New_York')
 
