@@ -2,5 +2,7 @@ __pycache__/
 Companywise_Assets/
 .env
 /.env
-/success_history/
-success_history/
+/history/first_email/*.txt
+history/first_email/*.txt
+/history/followup_email/*.txt
+history/followup_email/*.txt

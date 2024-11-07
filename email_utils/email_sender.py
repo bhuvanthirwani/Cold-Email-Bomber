@@ -10,6 +10,10 @@ import time
 from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from datetime import datetime
+import pytz
+
+
 
 resume_filename = "Bhuvan_Thirwani.pdf"  # Update as necessary
 resume_path = os.path.join("email_assets", resume_filename)
@@ -53,9 +57,20 @@ def send_email(sender_email, sender_password, recipient_email, subject, message,
 
         # Log successfully sent email address to a text file
         print("HAHHA", os.getcwd())
-        success_log_file = f"success_history/{scenario}/{company_name}_successfully_sent_emails.txt"
+        success_log_file = f"history/{scenario}/{company_name}_successfully_sent_emails.txt"
+        # Define US Eastern Standard Time timezone
+        est = pytz.timezone('America/New_York')
+
+        # Get the current date and time in EST
+        current_est_time = datetime.now(est)
+
+        # Format to only get the date if needed
+        current_est_date = current_est_time.date()
+
+        print("Current EST Date and Time:", current_est_time)
+        print("Current EST Date:", current_est_date)
         with open(success_log_file, 'a') as file:
-            file.write(recipient_email + '\n')
+            file.write(recipient_email + f',{scenario},{str(current_est_date)}' '\n')
 
         server.quit()
     except Exception as e:
